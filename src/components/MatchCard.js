@@ -4,8 +4,8 @@ export default function MatchCard({ match, round, picks, onPick, theme }) {
   const t = theme;
   const pickKey = `${round}-${match.id}`;
   const userPick = picks[pickKey];
-  const isLocked = match.status === "complete";
-  const winner = isLocked ? match.winner : userPick;
+  const isLocked = match.status === "complete" || !!userPick; // locked once user picks
+  const winner = match.status === "complete" ? match.winner : userPick;
 
   return (
     <div style={{
@@ -85,7 +85,7 @@ export default function MatchCard({ match, round, picks, onPick, theme }) {
           borderTop: `1px solid ${t.primary}44`,
           fontSize: 11, color: t.primary, fontWeight: 600,
         }}>
-          ✎ Tap to change pick
+          ✓ Pick locked in
         </div>
       ) : null}
     </div>
