@@ -13,7 +13,7 @@ export const TOURNAMENTS = [
     surface: "Clay",
     dates: "May 24 – June 7, 2026",
     location: "Paris, France",
-    status: "live", // "upcoming" | "live" | "complete"
+    status: "live",
     theme: {
       primary: "#c1440e",
       primaryDark: "#8b2e07",
@@ -100,10 +100,6 @@ export const TOURNAMENTS = [
   },
 ];
 
-// ─────────────────────────────────────────────────────────────
-// SCORING SYSTEM
-// R1 correct: 10 pts | R2: 20 | R3: 40 | R16: 80 | QF: 160 | SF: 320 | F: 640
-// ─────────────────────────────────────────────────────────────
 export const ROUND_POINTS = {
   R128: 10,
   R64: 20,
@@ -127,11 +123,11 @@ export const ROUND_LABELS = {
 
 // ─────────────────────────────────────────────────────────────
 // FRENCH OPEN 2026 — R1 DRAW
-// To update: find the match and set status:"complete", winner:"Player Name"
+// Last updated: Day 2 (May 26, 2026)
 // ─────────────────────────────────────────────────────────────
 const FO2026_R1 = [
   // ── TOP HALF (matches 1–32) ───────────────────────────────
-  { id: 1,  p1: "J. Sinner [1]",            p2: "C. Tabur (WC)",               status: "upcoming", winner: null },
+  { id: 1,  p1: "J. Sinner [1]",            p2: "C. Tabur (WC)",               status: "complete", winner: "J. Sinner [1]" },
   { id: 2,  p1: "J. Fearnley",              p2: "J.M. Cerundolo",              status: "upcoming", winner: null },
   { id: 3,  p1: "M. Landaluce",             p2: "J.C. Prado Ángelo (Q)",       status: "upcoming", winner: null },
   { id: 4,  p1: "V. Kopriva",               p2: "C. Moutet [30]",              status: "upcoming", winner: null },
@@ -139,19 +135,19 @@ const FO2026_R1 = [
   { id: 6,  p1: "M. Fucsovics",             p2: "M. Berrettini",               status: "complete", winner: "M. Berrettini" },
   { id: 7,  p1: "E. Quinn",                 p2: "F. Comesana",                 status: "upcoming", winner: null },
   { id: 8,  p1: "S. Ofner",                 p2: "L. Darderi [14]",             status: "upcoming", winner: null },
-  { id: 9,  p1: "A. Bublik [9]",            p2: "J-L. Struff",                 status: "upcoming", winner: null },
+  { id: 9,  p1: "A. Bublik [9]",            p2: "J-L. Struff",                 status: "complete", winner: "J-L. Struff" },
   { id: 10, p1: "J. Faria (Q)",             p2: "D. Shapovalov",               status: "upcoming", winner: null },
   { id: 11, p1: "J. Munar",                 p2: "H. Hurkacz",                  status: "complete", winner: "H. Hurkacz" },
   { id: 12, p1: "E. Spizzirri",             p2: "F. Tiafoe [19]",              status: "complete", winner: "F. Tiafoe [19]" },
   { id: 13, p1: "T. Griekspoor [29]",       p2: "M. Arnaldi",                  status: "upcoming", winner: null },
-  { id: 14, p1: "A. Muller",                p2: "S. Tsitsipas",                status: "upcoming", winner: null },
+  { id: 14, p1: "A. Muller",                p2: "S. Tsitsipas",                status: "complete", winner: "S. Tsitsipas" },
   { id: 15, p1: "R. Collignon",             p2: "A. Vukic",                    status: "complete", winner: "R. Collignon" },
   { id: 16, p1: "D. Merida",                p2: "B. Shelton [5]",              status: "complete", winner: "B. Shelton [5]" },
   { id: 17, p1: "S. Báez",                  p2: "R.A. Burruchaga",             status: "upcoming", winner: null },
   { id: 18, p1: "L. Van Assche",            p2: "P. Kypson",                   status: "complete", winner: "L. Van Assche" },
   { id: 19, p1: "R. Bautista Agut",         p2: "B. Nakashima [31]",           status: "complete", winner: "B. Nakashima [31]" },
-  { id: 20, p1: "C. Norrie [20]",           p2: "A.D. Vallejo",                status: "upcoming", winner: null },
-  { id: 21, p1: "M. Cilic",                 p2: "M. Kouamé (WC)",              status: "upcoming", winner: null },
+  { id: 20, p1: "C. Norrie [20]",           p2: "A.D. Vallejo",                status: "complete", winner: "C. Norrie [20]" },
+  { id: 21, p1: "M. Cilic",                 p2: "M. Kouamé (WC)",              status: "complete", winner: "M. Kouamé (WC)" },
   { id: 22, p1: "A. Tabilo",                p2: "K. Majchrzak",                status: "upcoming", winner: null },
   { id: 23, p1: "T. Faurel (Q)",            p2: "V. Vacherot [16]",            status: "upcoming", winner: null },
   { id: 24, p1: "F. Cobolli [10]",          p2: "A. Pellegrino (Q)",           status: "complete", winner: "F. Cobolli [10]" },
@@ -161,8 +157,8 @@ const FO2026_R1 = [
   { id: 28, p1: "F. Cerundolo [25]",        p2: "B. Van De Zandschulp",        status: "complete", winner: "F. Cerundolo [25]" },
   { id: 29, p1: "H. Gaston (WC)",           p2: "G. Monfils (WC)",             status: "complete", winner: "H. Gaston (WC)" },
   { id: 30, p1: "A. Popyrin",               p2: "Z. Svajda",                   status: "upcoming", winner: null },
-  { id: 31, p1: "A. Walton (WC)",           p2: "D. Medvedev [6]",             status: "upcoming", winner: null },
-  { id: 32, p1: "J. Fearnley (B)",          p2: "J. Cerundolo",                status: "upcoming", winner: null },
+  { id: 31, p1: "A. Walton (WC)",           p2: "D. Medvedev [6]",             status: "complete", winner: "A. Walton (WC)" },
+  { id: 32, p1: "J. de Jong (LL)",          p2: "S. Wawrinka",                 status: "complete", winner: "J. de Jong (LL)" },
   // ── BOTTOM HALF (matches 33–64) ──────────────────────────
   { id: 33, p1: "A. De Minaur [8]",         p2: "T. Samuel (Q)",               status: "complete", winner: "A. De Minaur [8]" },
   { id: 34, p1: "A. Blockx",                p2: "C. Wong (LL)",                status: "upcoming", winner: null },
@@ -184,34 +180,31 @@ const FO2026_R1 = [
   { id: 50, p1: "A. Shevchenko",            p2: "A. Michelsen",                status: "complete", winner: "A. Michelsen" },
   { id: 51, p1: "J. Duckworth",             p2: "G. Diallo",                   status: "upcoming", winner: null },
   { id: 52, p1: "A. Kovacevic",             p2: "R. Jodar [27]",               status: "complete", winner: "R. Jodar [27]" },
-  { id: 53, p1: "F. Auger-Aliassime [4]",   p2: "D. Altmaier",                 status: "upcoming", winner: null },
+  { id: 53, p1: "F. Auger-Aliassime [4]",   p2: "D. Altmaier",                 status: "complete", winner: "F. Auger-Aliassime [4]" },
   { id: 54, p1: "A. Davidovich Fokina [21]",p2: "B. Bonzi (LL)",               status: "upcoming", winner: null },
-  { id: 55, p1: "K. Khachanov [13]",        p2: "J. Fearnley (C)",             status: "upcoming", winner: null },
-  { id: 56, p1: "J. Lehečka [12]",          p2: "P. Carreño Busta",            status: "upcoming", winner: null },
+  { id: 55, p1: "K. Khachanov [13]",        p2: "J. Fearnley",                 status: "upcoming", winner: null },
+  { id: 56, p1: "P. Carreno Busta",         p2: "J. Lehečka [12]",             status: "complete", winner: "P. Carreno Busta" },
   { id: 57, p1: "T. Kokkinakis",            p2: "T. Atmane",                   status: "complete", winner: "T. Kokkinakis" },
   { id: 58, p1: "U. Humbert [32]",          p2: "A. Mannarino",                status: "complete", winner: "U. Humbert [32]" },
   { id: 59, p1: "T. Machac",                p2: "TBD",                         status: "upcoming", winner: null },
   { id: 60, p1: "A. Zverev [2]",            p2: "B. Bonzi",                    status: "complete", winner: "A. Zverev [2]" },
-  { id: 61, p1: "J. Mensik (B)",            p2: "TBD",                         status: "upcoming", winner: null },
+  { id: 61, p1: "L. Van Assche (B)",        p2: "TBD",                         status: "upcoming", winner: null },
   { id: 62, p1: "T. Paul (B)",              p2: "TBD",                         status: "upcoming", winner: null },
-  { id: 63, p1: "P. Carreno Busta (B)",     p2: "TBD",                         status: "upcoming", winner: null },
+  { id: 63, p1: "R. Collignon (B)",         p2: "TBD",                         status: "upcoming", winner: null },
   { id: 64, p1: "T. Kokkinakis (B)",        p2: "TBD",                         status: "upcoming", winner: null },
 ];
 
-// ─────────────────────────────────────────────────────────────
-// DRAWS MAP — add future tournament draws here
-// ─────────────────────────────────────────────────────────────
 export const DRAWS = {
   "french-open-2026": {
     R128: FO2026_R1,
-    R64:  [], // auto-populated from picks
+    R64:  [],
     R32:  [],
     R16:  [],
     QF:   [],
     SF:   [],
     F:    [],
   },
-  "wimbledon-2026": null, // not yet available
+  "wimbledon-2026": null,
   "us-open-2026":   null,
   "australian-open-2027": null,
 };
