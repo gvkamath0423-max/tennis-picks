@@ -1,15 +1,11 @@
 // src/lib/draws.js
-// Last updated: After Day 3 (May 26, 2026) — R1 complete, R2 added
+// Last updated: After Day 3 (May 26, 2026) — R1 complete, R2 corrected from ATP draw
 
 export const TOURNAMENTS = [
   {
     id: "french-open-2026",
-    name: "French Open",
-    year: 2026,
-    surface: "Clay",
-    dates: "May 24 – June 7, 2026",
-    location: "Paris, France",
-    status: "live",
+    name: "French Open", year: 2026, surface: "Clay",
+    dates: "May 24 – June 7, 2026", location: "Paris, France", status: "live",
     theme: {
       primary: "#c1440e", primaryDark: "#8b2e07", primaryLight: "#e8602a",
       accent: "#f0a030", bg: "#1a0a05", surface: "#2a1208", card: "#1e0e06",
@@ -110,20 +106,20 @@ const FO2026_R1 = [
   { id: 51, p1: "J. Duckworth",              p2: "G. Diallo",              status: "complete", winner: "J. Duckworth" },
   { id: 52, p1: "A. Kovacevic",              p2: "R. Jodar [27]",          status: "complete", winner: "R. Jodar [27]" },
   { id: 53, p1: "F. Auger-Aliassime [4]",    p2: "D. Altmaier",            status: "complete", winner: "F. Auger-Aliassime [4]" },
-  { id: 54, p1: "A. Davidovich Fokina [21]", p2: "T.A. Tirante",           status: "complete", winner: "A. Davidovich Fokina [21]" },
+  { id: 54, p1: "A. Davidovich Fokina [21]", p2: "T. Tirante",             status: "complete", winner: "A. Davidovich Fokina [21]" },
   { id: 55, p1: "K. Khachanov [13]",         p2: "M. Trungelliti",         status: "complete", winner: "K. Khachanov [13]" },
   { id: 56, p1: "P. Carreno Busta",          p2: "J. Lehečka [12]",        status: "complete", winner: "P. Carreno Busta" },
   { id: 57, p1: "T. Kokkinakis",             p2: "T. Atmane",              status: "complete", winner: "T. Kokkinakis" },
   { id: 58, p1: "U. Humbert [32]",           p2: "A. Mannarino",           status: "complete", winner: "U. Humbert [32]" },
   { id: 59, p1: "T. Machac",                 p2: "Z. Bergs",               status: "complete", winner: "T. Machac" },
   { id: 60, p1: "A. Zverev [2]",             p2: "B. Bonzi",               status: "complete", winner: "A. Zverev [2]" },
-  { id: 61, p1: "F. Cina",                   p2: "J. de Jong (LL)",        status: "complete", winner: "J. de Jong (LL)" },
-  { id: 62, p1: "N. Basavareddy (WC)",       p2: "A. Michelsen",           status: "complete", winner: "N. Basavareddy (WC)" },
-  { id: 63, p1: "T. Kokkinakis",             p2: "P. Carreno Busta",       status: "complete", winner: "P. Carreno Busta" },
-  { id: 64, p1: "U. Humbert [32]",           p2: "Q. Halys",               status: "complete", winner: "U. Humbert [32]" },
+  { id: 61, p1: "F. Cina (Q)",               p2: "J. de Jong (LL)",        status: "complete", winner: "J. de Jong (LL)" },
+  { id: 62, p1: "Q. Halys",                  p2: "TBD",                    status: "complete", winner: "Q. Halys" },
+  { id: 63, p1: "D. Prizmic (B)",            p2: "TBD",                    status: "complete", winner: "D. Prizmic" },
+  { id: 64, p1: "TBD",                       p2: "TBD",                    status: "complete", winner: "TBD" },
 ];
 
-// ─── ROUND 2 — PICKS OPEN, NO RESULTS YET ────────────────────────────────────
+// ─── ROUND 2 — CORRECTED FROM ATP DRAW ───────────────────────────────────────
 const FO2026_R2 = [
   // TOP HALF
   { id: 1,  p1: "J. Sinner [1]",             p2: "J.M. Cerundolo",         status: "upcoming", winner: null },
@@ -134,16 +130,16 @@ const FO2026_R2 = [
   { id: 6,  p1: "H. Hurkacz",                p2: "F. Tiafoe [19]",         status: "upcoming", winner: null },
   { id: 7,  p1: "M. Arnaldi",                p2: "S. Tsitsipas",           status: "upcoming", winner: null },
   { id: 8,  p1: "R. Collignon",              p2: "B. Shelton [5]",         status: "upcoming", winner: null },
-  { id: 9,  p1: "R.A. Burruchaga",           p2: "L. Van Assche",          status: "upcoming", winner: null },
-  { id: 10, p1: "B. Nakashima [31]",         p2: "A.D. Vallejo",           status: "upcoming", winner: null },
-  { id: 11, p1: "M. Kouamé (WC)",            p2: "A. Tabilo",              status: "upcoming", winner: null },
-  { id: 12, p1: "V. Vacherot [16]",          p2: "F. Cobolli [10]",        status: "upcoming", winner: null },
-  { id: 13, p1: "Y. Wu",                     p2: "F. Diaz Acosta (Q)",     status: "upcoming", winner: null },
-  { id: 14, p1: "L. Tien [18]",              p2: "F. Cerundolo [25]",      status: "upcoming", winner: null },
-  { id: 15, p1: "H. Gaston (WC)",            p2: "Z. Svajda",              status: "upcoming", winner: null },
-  { id: 16, p1: "A. Walton (WC)",            p2: "J. de Jong (LL)",        status: "upcoming", winner: null },
+  { id: 9,  p1: "R.A. Burruchaga",           p2: "F. Auger-Aliassime [4]", status: "upcoming", winner: null },
+  { id: 10, p1: "L. Van Assche",             p2: "B. Nakashima [31]",      status: "upcoming", winner: null },
+  { id: 11, p1: "A.D. Vallejo",              p2: "M. Kouamé (WC)",         status: "upcoming", winner: null },
+  { id: 12, p1: "A. Tabilo",                 p2: "V. Vacherot [16]",       status: "upcoming", winner: null },
+  { id: 13, p1: "F. Cobolli [10]",           p2: "Y. Wu",                  status: "upcoming", winner: null },
+  { id: 14, p1: "F. Diaz Acosta (Q)",        p2: "L. Tien [18]",           status: "upcoming", winner: null },
+  { id: 15, p1: "F. Cerundolo [25]",         p2: "H. Gaston (WC)",         status: "upcoming", winner: null },
+  { id: 16, p1: "Z. Svajda",                 p2: "A. Walton (WC)",         status: "upcoming", winner: null },
   // BOTTOM HALF
-  { id: 17, p1: "A. De Minaur [8]",          p2: "A. Blockx",              status: "upcoming", winner: null },
+  { id: 17, p1: "A. De Minaur [8]",          p2: "A. Blockx",              status: "complete", winner: "A. De Minaur [8]" },
   { id: 18, p1: "M. Navone",                 p2: "J. Mensik [26]",         status: "upcoming", winner: null },
   { id: 19, p1: "N. Borges",                 p2: "M. Kecmanovic",          status: "upcoming", winner: null },
   { id: 20, p1: "C. Ugo Carabelli",          p2: "A. Rublev [11]",         status: "upcoming", winner: null },
@@ -151,14 +147,13 @@ const FO2026_R2 = [
   { id: 22, p1: "L. Sonego",                 p2: "T. Paul [24]",           status: "upcoming", winner: null },
   { id: 23, p1: "J. Fonseca [28]",           p2: "D. Prizmic",             status: "upcoming", winner: null },
   { id: 24, p1: "V. Royer",                  p2: "N. Djokovic [3]",        status: "upcoming", winner: null },
-  { id: 25, p1: "N. Basavareddy (WC)",        p2: "A. Michelsen",           status: "upcoming", winner: null },
+  { id: 25, p1: "N. Basavareddy (WC)",       p2: "A. Michelsen",           status: "upcoming", winner: null },
   { id: 26, p1: "J. Duckworth",              p2: "R. Jodar [27]",          status: "upcoming", winner: null },
-  { id: 27, p1: "F. Auger-Aliassime [4]",    p2: "R.A. Burruchaga",              status: "upcoming", winner: null },
-  { id: 28, p1: "K. Khachanov [13]",         p2: "P. Carreno Busta",       status: "upcoming", winner: null },
-  { id: 29, p1: "T. Kokkinakis",             p2: "U. Humbert [32]",        status: "upcoming", winner: null },
-  { id: 30, p1: "T. Machac",                 p2: "A. Zverev [2]",          status: "upcoming", winner: null },
-  { id: 31, p1: "J. de Jong (LL)",           p2: "F. Cina",                status: "upcoming", winner: null },
-  { id: 32, p1: "N. Basavareddy (WC) (B)",   p2: "P. Carreno Busta (B)",   status: "upcoming", winner: null },
+  { id: 27, p1: "A. Davidovich Fokina [21]", p2: "K. Khachanov [13]",      status: "upcoming", winner: null },
+  { id: 28, p1: "T. Kokkinakis",             p2: "P. Carreno Busta",       status: "upcoming", winner: null },
+  { id: 29, p1: "F. Cina (Q)",               p2: "J. de Jong (LL)",        status: "upcoming", winner: null },
+  { id: 30, p1: "U. Humbert [32]",           p2: "Q. Halys",               status: "upcoming", winner: null },
+  { id: 31, p1: "T. Machac",                 p2: "A. Zverev [2]",          status: "upcoming", winner: null },
 ];
 
 export const DRAWS = {
