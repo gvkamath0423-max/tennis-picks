@@ -154,6 +154,25 @@ export default function BracketView({ tournament, draw, onShowAuth }) {
               {saveMsg}
             </span>
           )}
+          <button
+            onClick={() => {
+              if (window.confirm("Are you sure you want to clear ALL your picks? This cannot be undone.")) {
+                setPicks({});
+                setSaveMsg("Picks cleared!");
+                setTimeout(() => setSaveMsg(null), 3000);
+              }
+            }}
+            style={{
+              padding: "8px 16px",
+              background: "transparent",
+              border: "1px solid #cc4444",
+              borderRadius: 8, color: "#cc4444",
+              fontSize: 13, fontWeight: 600,
+              cursor: "pointer",
+            }}
+          >
+            🗑 Clear Picks
+          </button>
           <button onClick={handleSave} disabled={saving} style={{
             padding: "8px 20px", background: t.primary,
             border: "none", borderRadius: 8, color: t.white,
