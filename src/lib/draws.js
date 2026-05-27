@@ -150,11 +150,11 @@ const FO2026_R2 = [
   { id: 25, p1: "N. Basavareddy (WC)",       p2: "A. Michelsen",           status: "upcoming", winner: null },
   { id: 26, p1: "J. Duckworth",              p2: "R. Jodar [27]",          status: "upcoming", winner: null },
   { id: 27, p1: "A. Davidovich Fokina [21]", p2: "T. Tirante",             status: "upcoming", winner: null },
-  { id: 27, p1: "K. Khachanov [13]",         p2: "M. Trungelliti",         status: "upcoming", winner: null },
-  { id: 28, p1: "T. Kokkinakis",             p2: "P. Carreno Busta",       status: "upcoming", winner: null },
-  { id: 29, p1: "F. Cina (Q)",               p2: "J. de Jong (LL)",        status: "upcoming", winner: null },
-  { id: 30, p1: "U. Humbert [32]",           p2: "Q. Halys",               status: "upcoming", winner: null },
-  { id: 31, p1: "T. Machac",                 p2: "A. Zverev [2]",          status: "upcoming", winner: null },
+  { id: 28, p1: "K. Khachanov [13]",         p2: "M. Trungelliti",         status: "upcoming", winner: null },
+  { id: 29, p1: "T. Kokkinakis",             p2: "P. Carreno Busta",       status: "upcoming", winner: null },
+  { id: 30, p1: "F. Cina (Q)",               p2: "J. de Jong (LL)",        status: "upcoming", winner: null },
+  { id: 31, p1: "U. Humbert [32]",           p2: "Q. Halys",               status: "upcoming", winner: null },
+  { id: 32, p1: "T. Machac",                 p2: "A. Zverev [2]",          status: "upcoming", winner: null },
 ];
 
 export const DRAWS = {
